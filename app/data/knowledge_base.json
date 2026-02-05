@@ -1,0 +1,109 @@
+{
+  "systematic_components": {
+    "technical_quality": {
+      "positioning": {
+        "description": "Spinous processes align with mid-clavicular line",
+        "checklist": ["rotation_assessment", "scapular_position", "clavicle_alignment"]
+      },
+      "penetration": {
+        "description": "Faint visualization of vertebral bodies through mediastinum",
+        "criteria": {"lungs": "gray", "vessels": "easily_seen", "vertebrae": "faintly_visible"}
+      },
+      "motion": {
+        "description": "Sharpness of rib cortices, vessel margins, diaphragm",
+        "assessment_points": ["rib_cortices", "vessel_margins", "diaphragm_contours"]
+      },
+      "inspiration": {
+        "description": "Right hemidiaphragm at 6th anterior or 10th posterior rib",
+        "measurement": "mid_clavicular_line"
+      }
+    },
+    "anatomic_regions": {
+      "chest_wall": {
+        "normal_findings": ["symmetric_breast_shadows", "intact_ribs", "normal_soft_tissues"],
+        "abnormalities": {
+          "poland_syndrome": "unilateral_underdevelopment",
+          "pectus_excavatum": "mimics_middle_lobe_disease",
+          "rib_destruction": "indicates_malignancy",
+          "incomplete_border_sign": "chest_wall_mass"
+        }
+      },
+      "mediastinum": {
+        "compartments": ["anterior", "middle", "posterior"],
+        "heart": {
+          "borders": {
+            "right": "right_atrium",
+            "left": ["left_ventricle", "left_atrial_appendage"]
+          },
+          "signs": {
+            "water_bottle_heart": "pericardial_effusion",
+            "epicardial_fat_pad": ">2mm_soft_tissue_band"
+          }
+        },
+        "lines_stripes": {
+          "anterior_junction_line": "interface_between_upper_lobes_anterior_to_great_vessels",
+          "posterior_junction_line": "interface_posterior_to_esophagus",
+          "paravertebral_stripes": "may_be_thickened_by_lymphadenopathy"
+        }
+      },
+      "hila": {
+        "normal": "right_hilum_lower_than_left_in_97%",
+        "abnormalities": {
+          "enlargement_causes": ["central_neoplasm", "lymphadenopathy", "pulmonary_hypertension"],
+          "hilar_convergence_sign": "enlarged_vessels_coursing_to_hilum"
+        }
+      },
+      "lungs": {
+        "patterns": {
+          "air_space": {
+            "characteristics": ["air_bronchograms", "lobar_distribution", "fluffy_opacities"],
+            "causes": ["pneumonia", "pulmonary_edema", "hemorrhage"]
+          },
+          "interstitial": {
+            "types": ["reticular", "nodular", "reticulonodular"],
+            "causes": ["pulmonary_fibrosis", "sarcoidosis", "lymphangitic_carcinomatosis"]
+          }
+        },
+        "nodules": {
+          "solitary_pulmonary_nodule": {"definition": "<3cm_round_opacity", "malignancy_features": ["spiculation", "irregular_margins"]},
+          "mass": {"definition": ">=3cm", "high_suspicion": "malignancy"}
+        }
+      },
+      "airways": {
+        "trachea": {
+          "deviation": {"ipsilateral": "volume_loss", "contralateral": "mass_effect"},
+          "narrowing": {"focal": "post_intubation", "diffuse": "saber_sheath_COPD"}
+        },
+        "bronchiectasis": {
+          "signs": ["tram_tracks", "clustered_cystic_lesions"],
+          "causes": ["infection", "cystic_fibrosis", "ABPA"]
+        }
+      },
+      "pleura_diaphragm": {
+        "pneumothorax": {
+          "sign": "visceral_pleural_line_inwardly_displaced",
+          "types": ["primary_spontaneous", "secondary", "traumatic"]
+        },
+        "effusion": {
+          "small": "blunts_costophrenic_sulcus",
+          "loculated": "biconvex_mass_like_opacity",
+          "massive": "obscures_hemidiaphragm"
+        }
+      }
+    }
+  },
+  "differential_diagnoses": {
+    "reticular_pattern": {
+      "acute": ["interstitial_edema", "viral_pneumonia", "acute_allergic_reactions"],
+      "chronic": ["UIP_IPF", "NSIP", "asbestosis", "collagen_vascular_disease"]
+    },
+    "nodular_pattern": {
+      "micronodular": ["alveolar_microlithiasis", "talc_granulomatosis", "early_pneumoconiosis"],
+      "nodular": ["miliary_TB", "sarcoidosis", "metastases", "pneumoconiosis"]
+    },
+    "upper_zone_predominant": ["TB", "sarcoidosis", "pneumoconiosis", "Langerhans_cell_histiocytosis", "cystic_fibrosis"],
+    "basal_predominant": ["IPF_UIP", "asbestosis", "scleroderma", "bronchiectasis", "COVID19"],
+    "peripheral_predominant": ["COP_BOOP", "cryptogenic_organizing_pneumonia", "COVID19"],
+    "perihilar_predominant": ["sarcoidosis", "lymphoma", "pulmonary_edema", "Kaposi_sarcoma"]
+  }
+}
